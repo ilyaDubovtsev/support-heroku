@@ -1,6 +1,6 @@
 import os
 
-from support-heroku import app
+from supportHeroku import app
 
 
 if __name__ == '__main__':
