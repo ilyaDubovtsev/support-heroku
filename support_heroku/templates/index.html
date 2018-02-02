@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <!-- Meta, title, CSS, favicons, etc. -->
+	    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+	
+		<title>
+		  
+		    ЭкзаменONLINE
+		  
+		</title>
+	
+		<!-- Bootstrap core CSS -->
+		<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+		
+		<!-- Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&amp;subset=cyrillic,cyrillic-ext' rel='stylesheet' type='text/css'>		
+		<!-- Rocket extras -->
+        <link href="{{ url_for('static', filename='css/animate.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='css/glyphicons.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='css/prettyPhoto.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+
+		
+		<!-- Favicons -->
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../docs-assets/ico/apple-touch-icon-144-precomposed.png">
+		                               <link rel="shortcut icon" href="../docs-assets/ico/favicon.png">
+	</head>
+	<body>
+	
+	<!-- Start Rocket -->
+	<!-- ********************* -->
+	
+	<!-- Parallax Background
+	================================================== -->
+	<!-- image is set in the CSS as a background image -->
+	<div id="parallax"></div>
+	<!-- End Parallax Background
+	================================================== -->
+	
+	<!-- Start Header
+	================================================== -->
+	<header id="header" class="navbar navbar-inverse navbar-fixed-top" role="banner">
+	  <div class="container">
+	    <div class="navbar-header">
+	      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse" style="margin-top: 50px!important;">
+	        <span class="sr-only">Навигация</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <!-- Your Logo -->
+	      <a href="../" class="navbar-brand">Экзамен<span class="lighter"> online</span></a>
+	    </div>
+	    <!-- Start Navigation -->
+	    <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
+	      <ul class="nav navbar-nav">
+	        <li>
+	          <a href="#hero">Начало</a>
+	        </li>
+	        <li>
+	          <a href="#features">Как заказать</a>
+	        </li>
+	        <li>
+	          <a href="#specialists">Специалисты</a>
+	        </li>
+	        <li>
+	          <a href="#newsletter">Отзывы</a>
+	        </li>
+	      </ul>
+	    </nav>
+	  </div>
+	</header>
+	<!-- ==================================================
+	End Header -->
+	
+	<!-- Start Hero Section 
+	================================================== -->
+	<section id="hero" class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5 col-sm-12">
+					<div class="lp-element animate" data-animate="fadeInLeft">
+						<h1>ЭКЗАМЕН<span class="lighter"> ONLINE</span></h1>
+						<p class="lead">Мы поможем вам с проблемами по учебе</p>
+					</div>
+				</div>
+				<div class="col-md-7 hidden-sm hidden-xs hidden-md">
+                    <img src="{{ url_for('static', filename='images/heroimg.png') }}">
+                </div>
+			</div>
+		</div>
+	</section>
+	<!-- ================================================== 
+	End Hero -->
+	
+	<!-- Start Features
+	================================================== -->
+	<section id="features" class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<!-- Title -->
+					<div class="overview animate" data-animate="flipInX">
+                        <h3 class="section-title"><span class="lighter">Как заказать</span> помощь <span class="lighter">с решениями?</span></h3>
+						<p class="lead">Все очень просто</p>
+					</div>
+				</div>
+
+				<div class="col-md-3 col-sm-6">
+					<div class="service-block animate" data-animate="fadeInRight">
+						<span class="glyphicons white search"><i></i></span>
+						<h3>1. Выбор специалистов</h3>
+                        <a href="#" >Зайди в список специалистов.</a>
+						<!-- <button type="button" class="btn btn-info btn-md">Learn More</button> -->
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="service-block animate" data-animate="flipInY">
+						<span class="glyphicons white envelope"><i></i></span>
+						<h3>2.Напиши специалисту</h3>
+						<p>Напиши выбранному специалисту в личные сообщения.</p>
+						<!-- <button type="button" class="btn btn-info btn-md">Learn More</button> -->
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="service-block animate" data-animate="flipInX">
+						<span class="glyphicons white clock"><i></i></span>
+						<h3>3. Жди оценку</h3>
+						<p>Жди оценку своей работы.</p>
+						<!-- <button type="button" class="btn btn-info btn-md">Learn More</button> -->
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="service-block animate" data-animate="fadeInLeft">
+						<span class="glyphicons white calculator"><i></i></span>
+						<h3>4.Оплачивай работу</h3>
+						<p>Оплачивай работу и получай решение почти сразу (или по договоренности).</p>
+						<!-- <button type="button" class="btn btn-info btn-md">Learn More</button> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- ==================================================
+	End Features -->
+	
+	<!-- Start Specialists Block
+	================================================== -->
+	<section id="specialists" class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 sol-sm-12">
+					<div class="overview animate" data-animate="flipInX">
+						<h3 class="section-title"><span class="lighter">Наша</span> команда</h3>
+                        <i class="glyphicon glyphicon-education" style="font-size: 40px;"></i>
+					</div>
+				</div>
+                {% for i in range(7) %}
+                    <div class="col-md-3 animate" data-animate="fadeInLeft" style="display: inline-block !important; margin-top: 60px;">
+                        <img src="{{url_for('static', filename = params['avs'][i])}}">
+                    </div>
+                    <div class="col-md-9 col-sm-12" style="display: inline-block">
+                        <div class="content-block animate" data-animate="fadeInRight" style="display: inline-block; margin-top: 60px; margin-bottom: 60px; width: 90%">
+                            <h2>{{ params['names'][i] }}</h2>
+
+                                <h3 style="color: #599bb4;">Помощь с предметами:</h3>
+                                <hr style="background-color: #599bb4;">
+                                <p class="lead">{{ params['skils'][i] }}</p>
+
+                            <a class="btn btn-lg btn-primary" href="{{ params['urls'][i]}}">Написать в личку</a>
+                        </div>
+                    </div>
+                {% endfor %}
+			</div>
+		</div>
+	</section>
+	
+	<!-- ==================================================
+	End Specialists Blcok -->
+	
+	<!-- Start Newsletter Block
+	================================================== -->
+	<section id="newsletter" class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="overview animate" data-animate="fadeInDown">
+						<h3 class="section-title"><strong>Если нужны отзывы,</strong></h3>
+						<p class="lead">то большую часть отзывов можно найти на личных страницах
+                            каждого специалиста, либо их можно попросить по запросу
+                            у каждого через личные сообщения.
+                        </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ==================================================
+	End Newsletter Blcok -->
+	
+	
+	
+	<!-- Bootstrap core JavaScript
+	================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+	<script src="{{ url_for('static', filename='js/jquery-1.10.2.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/waypoints.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.scrollto.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.localscroll.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.prettyPhoto.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+
+	
+	<!-- ********************* -->
+	<!-- Start Rocket -->
+	
+	</body>
+</html>
